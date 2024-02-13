@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.emblem{
+  width: 5rem;
+  padding-right: 2rem;
+}
+ 
+ 
+.landingPage-btn, .update-btn{
+  padding: 1rem 6rem;
+  margin-top: 4rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  outline: none !important;
+  border: none !important;
+  background-color: rgb(28, 199, 28);
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+ .homePageBg {
+  background: linear-gradient(
+    118.19deg,
+    #1fa2ff -3.62%,
+    #12d8fa 50.44%,
+    #a6ffcb 104.51%
+  );
+  opacity: 0.2;
+  filter: blur(34px);
+  transform: matrix(1, 0, -0.03, 1, 0, 0);
+}
+ 
+/* small devices */
+@media screen and (max-width: 400px){
+  
+  .landingPage-mainDiv{
+      padding: 0 2rem;
+  }
+
+  .welcome-p{
+      width: 86%;
+  }
+
+  .landingPage-btn{
+      font-size: 1.5rem;
+      padding: 1rem 3rem;
+  }
+
+  html{
+      font-size: 80%;
+  }
+  h1 :hover{
+    cursor: pointer;
+  }
+}
+.lable-style {
+  @apply text-[14px] text-richblack-5;
+}
+.form-style {
+  @apply rounded-lg bg-richblack-700 p-3 text-[16px] leading-[24px] text-richblack-5 shadow-[0_1px_0_0] shadow-white/50 placeholder:text-richblack-400 focus:outline-none;
+}
+.btn-style{
+  @apply text-center flex justify-center items-center gap-x-3  text-[16px] sm:text-[16px] px-8 py-4 rounded-md font-bold  bg-[#60a5fa] text-black hover:cursor-pointer hover:scale-95 transition-all duration-200;
+}
+.btn-style2{
+  @apply rounded-md bg-yellow-50 px-6 py-3 text-center text-[13px] font-bold text-black shadow-[2px_2px_0px_0px_rgba(255,255,255,0.18)];
+}
