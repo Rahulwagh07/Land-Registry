@@ -23,7 +23,7 @@ function App() {
 
   const connectToEthereum = async () => {
     const provider = await detectEtherumProvider();
-    const fromAccount = "0x9ed097027764EFF4F910aEad8052419dD3B5e37a";  
+    const fromAccount = process.env.SUPER_ADMIN; 
     if (provider) {
       try {
         provider.request({ method: 'eth_requestAccounts' });
